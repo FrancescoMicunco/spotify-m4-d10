@@ -1,55 +1,59 @@
-import { Link } from "react-router-dom"
-import spotifylogo from '../assets/spotify-logo.png'
+import { Link } from "react-router-dom";
+import spotifylogo from "../assets/spotify-logo.png";
 
+const Sidebar = () => {
+  return (
+    <div className="col-2 d-none d-lg-block">
+      <div className="row">
+        <div className="side-bar col-12 px-0">
+          <Link to="/">
+            <img
+              className="spotify-logo"
+              src={spotifylogo}
+              alt="sidebar-logo"
+            />
+          </Link>
+          <Link to="/">
+            <div className="nav-link d-flex selected py-2">
+              <i className="bi bi-house-door mx-3"></i>
+              <p>Home</p>{" "}
+            </div>
+          </Link>
+          <div className="d-flex  py-2">
+            <i className="mx-3 bi bi-search"></i>
+            <p>Search</p>
+          </div>
 
-const Sidebar= ()=>{
-    return (
-        <div className="col-2 d-none d-lg-block">
-                        <div className="row">
-                            <div className="side-bar col-12 px-0">
-                                <Link to="/">
-                                <img className="spotify-logo" src={spotifylogo} alt="sidebar-logo"/>
-                                </Link>
-                                <Link to="/">
-                                <div className="nav-link d-flex selected py-2">
-                                    <i className="bi bi-house-door mx-3"></i>
-                                    <p>Home</p> </div>
-                                </Link>                             
-                                <div  className="d-flex  py-2">
-                                    <i className="mx-3 bi bi-search"></i>
-                                    <p>Search</p>
-                                </div>
+          <div className="d-flex py-2">
+            <i className="bi bi-collection-play mx-3"></i>
+            <p>Your Library</p>
+          </div>
 
-                                <div  className="d-flex py-2">
-                                    <i className="bi bi-collection-play mx-3"></i>
-                                    <p>Your Library</p>
-                                </div>
+          <Link to="/album">
+            <div className="nav-link d-flex py-2">
+              <i className="bi bi-vinyl mx-3"></i>
+              <p>Albums</p>
+            </div>
+          </Link>
 
-                                <Link>
-                                <div className="nav-link d-flex py-2">
-                                    <i className="bi bi-vinyl mx-3"></i>
-                                    <p>Albums</p>
-                                </div>
-                                </Link>
-                                             
-                                <Link to="/artist">
-                                <div className="nav-link d-flex py-2">
-                                    <i className="bi bi-music-note-beamed mx-3"></i>
-                                    <p>Artists</p>
-                                </div>
-                                </Link> 
-                                <div  className="d-flex py-2">
-                                    <i className="bi bi-heart-fill mx-3"></i>
-                                    <p>Liked Songs</p>
-                                </div>
+          <Link to="/artist">
+            <div className="nav-link d-flex py-2">
+              <i className="bi bi-music-note-beamed mx-3"></i>
+              <p>Artists</p>
+            </div>
+          </Link>
+          <div className="d-flex py-2">
+            <i className="bi bi-heart-fill mx-3"></i>
+            <p>Liked Songs</p>
+          </div>
 
-                                <div  className="d-flex py-2">
-                                    <i className="bi bi-person-circle mx-3"></i>
-                                    <p>Account</p>
-                                </div>
+          <div className="d-flex py-2">
+            <i className="bi bi-person-circle mx-3"></i>
+            <p>Account</p>
+          </div>
 
-                                <hr className="border-secondary d-none d-xl-block"/>
-                                {/* <div class="other-links d-none d-xl-flex flex-column">
+          <hr className="border-secondary d-none d-xl-block" />
+          {/* <div class="other-links d-none d-xl-flex flex-column">
                                     <a href="#good-morning-h3">Good Morning</a>
                                     <a href="#recently-played-h4">Recently Played</a>
                                     <a href="#shows-to-try-h4">Shows To Try</a>
@@ -68,10 +72,10 @@ const Sidebar= ()=>{
                                     <a href="#" class="light-gray-text"><i class="bi bi-arrow-down-circle"> </i>Install
                                         app</a>
                                 </div> */}
-                            </div>
-                        </div>
-                    </div>
-    )
-}
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Sidebar
+export default Sidebar;

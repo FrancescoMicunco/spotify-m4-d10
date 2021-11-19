@@ -1,4 +1,5 @@
 import "./App.css";
+import "./style.css"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Sidebar from "./Components/Sidebar";
