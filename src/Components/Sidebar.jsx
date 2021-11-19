@@ -19,12 +19,12 @@ const Sidebar = () => {
               <p>Home</p>{" "}
             </div>
           </Link>
-          <div className="d-flex  py-2">
+          <div className="nav-link d-flex  py-2">
             <i className="mx-3 bi bi-search"></i>
             <p>Search</p>
           </div>
 
-          <div className="d-flex py-2">
+          <div className="nav-link d-flex py-2">
             <i className="bi bi-collection-play mx-3"></i>
             <p>Your Library</p>
           </div>
@@ -42,12 +42,12 @@ const Sidebar = () => {
               <p>Artists</p>
             </div>
           </Link>
-          <div className="d-flex py-2">
+          <div className="nav-link d-flex py-2">
             <i className="bi bi-heart-fill mx-3"></i>
             <p>Liked Songs</p>
           </div>
 
-          <div className="d-flex py-2">
+          <div className="nav-link d-flex py-2">
             <i className="bi bi-person-circle mx-3"></i>
             <p>Account</p>
           </div>
