@@ -14,7 +14,7 @@ const Artist = () => {
                                     </div>
                                 </div>
                                 <div className="account">
-                                                                        <div className="btn-group">
+                                    <div className="btn-group">
                                         <button className="btn btn-sm bg-black dropdown-toggle rounded-pill" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-circle" viewBox="0 0 16 16">
                                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>

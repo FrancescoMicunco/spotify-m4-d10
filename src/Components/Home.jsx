@@ -8,17 +8,10 @@ const Home = () => {
     <>
       <div className="container-fluid">
         <Row>
-          <Col md={3}>
-            <Sidebar />
-          </Col>
-          <Col md={9}>
-            <Row>
-              <Col md={12}>
-                <MainContainer />
-                <MainSongContainer />
-              </Col>
-            </Row>
-          </Col>
+          <MainContainer />
+          <MainSongContainer />
+         
+           
         </Row>
       </div>
     </>
