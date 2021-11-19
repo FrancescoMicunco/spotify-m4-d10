@@ -3,7 +3,7 @@ import spotifylogo from "../assets/spotify-logo.png";
 
 const Sidebar = () => {
   return (
-    <div className="col-2 d-none d-lg-block">
+    <div className="col-12 d-none d-lg-block">
       <div className="row">
         <div className="side-bar col-12 px-0">
           <Link to="/">

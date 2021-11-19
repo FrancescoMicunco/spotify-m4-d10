@@ -117,7 +117,7 @@ div.triangle {
 
 .side-bar {
     height: 100%;
-    width: 17%;
+    /* width: 17%; */
     position: fixed;
     z-index: 1;
     top: 0;

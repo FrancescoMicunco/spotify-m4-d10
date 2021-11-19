@@ -1,18 +1,18 @@
 import "./App.css";
-import "./style.css"
+import "./style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
-import Sidebar from "./Components/Sidebar";
-import Home from './Components/Home'
+import Home from "./Components/Home";
 import Artist from "./Components/Artist";
 import Album from "./Components/Album";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
-      <Sidebar />
       <div className="App">
         <header className="App-header">
+          <Home />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/artist" element={<Artist />} />
@@ -21,6 +21,7 @@ function App() {
           </Routes>
         </header>{" "}
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }
