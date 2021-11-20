@@ -7,8 +7,9 @@ import SmallCard from "./SmallCard";
 
 
 
-const MainContainer = () => {
-  const [searched, setSearched] = useState("Artist");
+const MainContainer = (props) => {
+  const [searchedType, setSearchedType] = useState("Artist");
+  const [searchedQuery, setSearchedQuery]= useState('queen')
   return (
     <div className="col-12 main-page-content">
       <div className="row">
@@ -16,7 +17,10 @@ const MainContainer = () => {
           <div className="d-none d-md-flex justify-content-between">
             <ForwardRew /> {/*here the arrows on the top of the page */}
             <div>
-              <SearchField searched={searched} setSearched={setSearched} />
+              <SearchField
+                searched={searchedType}
+                setSearched={setSearchedType}
+              />
             </div>
             <Login />
           </div>
@@ -25,23 +29,22 @@ const MainContainer = () => {
           </h3>
 
           <div className="good-morning-container row ml-2">
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
-            <SmallCard title={"Rolling Stones"} />
+            <SmallCard title={searchedType} />
+            <SmallCard title={searchedQuery} />
+            <SmallCard title={searchedQuery} />
+            <SmallCard title={searchedQuery} />
+            <SmallCard title={searchedQuery} />
+            <SmallCard title={searchedQuery} />
+            <SmallCard title={searchedQuery} />
+            <SmallCard title={searchedQuery} />
+            <SmallCard title={searchedQuery} />
             {/* <SmallCard title={"Beatles"} />
             <SmallCard title={"Depeche Mode"} />
             <SmallCard title={"the Cranberries"} /> */}
           </div>
         </div>
       </div>
-      <SubTitleJumbo title={searched} />
+      <SubTitleJumbo title={searchedType} />
     </div>
   );
 };

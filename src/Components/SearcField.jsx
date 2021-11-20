@@ -9,7 +9,7 @@ return (
     classname="dorm-control bg-dark text-white"
   ></InputGroup.Text>
   <FormControl placeholder="Songs, Artists, Albums" 
-  onChange={(e)=>props.setSearched(e.target.value)}/>
+  onChange={(e)=>props.setSearchedType(e.target.value)}/>
 </InputGroup>
 
 )
